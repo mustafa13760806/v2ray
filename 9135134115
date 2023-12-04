@@ -1,4 +1,1 @@
-vless://e69d8561-2548-43e4-b8e7-f75814338e26@162.251.82.187:443?encryption=none&security=tls&sni=cdnhid.vpweb.cfd&alpn=h2&fp=chrome&type=ws&host=cdnhid.vpweb.cfd&path=%2FXwFwwXRySM8UlqCvGVMHKx1#Server17
-vless://e69d8561-2548-43e4-b8e7-f75814338e26@156.238.18.146:443?encryption=none&security=tls&sni=cdnhid.vpweb.cfd&alpn=h2&fp=chrome&type=grpc&serviceName=XwFwwXRySM8Ul7xbeLIZs&mode=gun#Server18
-vless://e69d8561-2548-43e4-b8e7-f75814338e26@162.251.82.187:443?encryption=none&security=tls&sni=cdnhid.vpweb.cfd&alpn=h2&fp=chrome&type=grpc&serviceName=XwFwwXRySM8Ul7xbeLIZs&mode=gun#Server19
-vless://e69d8561-2548-43e4-b8e7-f75814338e26@156.238.18.146:443?encryption=none&security=tls&sni=cdnhid.vpweb.cfd&alpn=h2&fp=chrome&type=ws&host=cdnhid.vpweb.cfd&path=%2FXwFwwXRySM8UlqCvGVMHKx1#Server20
+vless://8f07dc3b-8a0f-430f-a0fc-25e07760502c@172.67.132.41:2095?encryption=none&security=none&type=ws&host=nl54.vlessx.us&path=%2F%3Fed%3D2048#Server21

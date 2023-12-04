@@ -1,3 +1,4 @@
-vless://--GozargahVPN---@91.107.190.232:443?encryption=none&security=reality&sni=ghbi.ir&fp=chrome&pbk=oNw70MueB6_w0854UW3t-qcV7IcEPFuia5UJjYGXxFE&sid=16&spx=%2F&type=grpc&serviceName=GozargahVPN&mode=gun#%F0%9F%87%A9%F0%9F%87%AAServer15
-vless://4100d055-5857-44fb-9b7b-9d699dd4f347@95.217.31.246:18929?encryption=none&security=reality&sni=testv6.tigervp.xyz&fp=firefox&pbk=rFZOWxVcsZn5--1yLku3SGglZ0Y2Ban0buZIN3-vFwU&sid=cfef326c&spx=%2Ff2net&type=tcp&headerType=http&host=bmw.com#Server16
-vless://93f1de92-bb07-43de-bfa6-a754b21f7768@88.198.90.167:443?encryption=none&flow=xtls-rprx-vision&security=reality&sni=discord.com&alpn=http%2F1.1&fp=chrome&pbk=Sk6csLYM-mx80_u2NWTnchiLdzCSsoqR_BLNUqHdkHE&sid=6345cd&type=tcp&headerType=none#Server17
+vless://e69d8561-2548-43e4-b8e7-f75814338e26@162.251.82.187:443?encryption=none&security=tls&sni=cdnhid.vpweb.cfd&alpn=h2&fp=chrome&type=ws&host=cdnhid.vpweb.cfd&path=%2FXwFwwXRySM8UlqCvGVMHKx1#Server17
+vless://e69d8561-2548-43e4-b8e7-f75814338e26@156.238.18.146:443?encryption=none&security=tls&sni=cdnhid.vpweb.cfd&alpn=h2&fp=chrome&type=grpc&serviceName=XwFwwXRySM8Ul7xbeLIZs&mode=gun#Server18
+vless://e69d8561-2548-43e4-b8e7-f75814338e26@162.251.82.187:443?encryption=none&security=tls&sni=cdnhid.vpweb.cfd&alpn=h2&fp=chrome&type=grpc&serviceName=XwFwwXRySM8Ul7xbeLIZs&mode=gun#Server19
+vless://e69d8561-2548-43e4-b8e7-f75814338e26@156.238.18.146:443?encryption=none&security=tls&sni=cdnhid.vpweb.cfd&alpn=h2&fp=chrome&type=ws&host=cdnhid.vpweb.cfd&path=%2FXwFwwXRySM8UlqCvGVMHKx1#Server20

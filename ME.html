@@ -1,8 +1,20 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Data from URL</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
 <body>
+    <h1>Data from URL</h1>
 
-<iframe src="https://raw.githubusercontent.com/mustafa13760806/v2ray/main/Matin"></iframe>
+    <div id="data"></div>
 
+    <script>
+        // Fetch data from URL
+        $.get("https://raw.githubusercontent.com/mustafa13760806/v2ray/main/Matin", function(response) {
+            // Output the data to the HTML page
+            $("#data").html(response);
+        });
+    </script>
 </body>
 </html>

@@ -1,8 +1,25 @@
-<!DOCTYPE html>
-<html>
-<body>
+// Create an XMLHttpRequest object
+var xhr = new XMLHttpRequest();
 
-<iframe src="https://raw.githubusercontent.com/mustafa13760806/v2ray/main/Matin"></iframe>
+// Define the URL of the HTML page you want to read
+var url = "path/to/other/page.html";
 
-</body>
-</html>
+// Use the open method with "GET" request to retrieve the page
+xhr.open("GET", url, true);
+
+// Define the callback function to execute when the request is completed
+xhr.onload = function() {
+  // Check if the request was successful
+  if (this.status === 200) {
+    // Extract the text from the response
+    var text = this.responseText;
+    
+    // Do something with the text
+    console.log(text);
+  } else {
+    console.log("Error: " + this.status);
+  }
+};
+
+// Send the request
+xhr.send();

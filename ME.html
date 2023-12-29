@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Data from URL</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <meta charset="UTF-8">
+  <title>Data Update</title>
 </head>
 <body>
-    <div id="data"></div>
+  <div id="data-container"></div>
 
-    <script>
-        // Fetch data from URL
-        $.get("https://raw.githubusercontent.com/mustafa13760806/v2ray/main/Matin", function(response) {
-            // Output the data to the HTML page
-            $("#data").html(response);
-        });
-    </script>
+  <script>
+    // Function to fetch data from the URL
+    function fetchData() {
+      // Make an Ajax request
+      var xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+          var data = JSON.parse(xhr.responseText);
+          // Update the data container
+          document.getElementById("data-container").textContent = data;
+        }
+      };
+      xhr.open("GET", "https://raw.githubusercontent.com/mustafa13760806/v2ray/main/Matin", true);
+      xhr.send();
+    }
+
+    // Call the fetchData function every 1 hour (in milliseconds)
+    setInterval(fetchData, 60 * 60 * 1000);
+  </script>
 </body>
 </html>

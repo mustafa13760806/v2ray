@@ -1,30 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Data Update</title>
+  <title>Data Fetch and Form Update</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-  <div id="data-container"></div>
+  <h1>Form Data Update</h1>
+
+  <form id="dataForm">
+    <label for="dataInput">Data:</label>
+    <input type="text" id="dataInput" name="dataInput">
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
 
   <script>
-    // Function to fetch data from the URL
-    function fetchData() {
-      // Make an Ajax request
-      var xhr = new XMLHttpRequest();
-      xhr.onreadystatechange = function() {
-        if (xhr.readyState === 4 && xhr.status === 200) {
-          var data = JSON.parse(xhr.responseText);
-          // Update the data container
-          document.getElementById("data-container").textContent = data;
-        }
-      };
-      xhr.open("GET", "https://raw.githubusercontent.com/mustafa13760806/v2ray/main/Matin", true);
-      xhr.send();
+    // Function to fetch data from URL and update the form
+    function fetchDataAndUpdateForm() {
+      // HTTP GET request to URL1
+      $.get("https://raw.githubusercontent.com/mustafa13760806/v2ray/main/Matin", function(data) {
+        // Update the form with the retrieved data
+        $("#dataInput").val(data);
+      });
     }
 
-    // Call the fetchData function every 1 hour (in milliseconds)
-    setInterval(fetchData, 60 * 60 * 1000);
+    // Initial form update
+    fetchDataAndUpdateForm();
+
+    // Schedule form update every hour (in milliseconds)
+    setInterval(fetchDataAndUpdateForm, 3600000);
+
+    // Submit form handler (optional)
+    $("#dataForm").submit(function(e) {
+      e.preventDefault();
+      // Get the updated data from the form
+      var updatedData = $("#dataInput").val();
+      // Do something with the updated data (e.g., send it to a server)
+
+      // Optional: Display a success message
+      alert("Data updated successfully!");
+    });
   </script>
 </body>
 </html>

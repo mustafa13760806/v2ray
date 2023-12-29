@@ -1,69 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Save Text to file1.txt on GitHub</title>
+  <title>Get Text from URL and Save to GitHub</title>
+  <script>
+    function getTextAndSaveToFile() {
+      var url = "https://raw.githubusercontent.com/mustafa13760806/v2ray/main/Matin"; // Replace with your desired URL
+
+      fetch(url)
+        .then(response => response.text())
+        .then(text => {
+          var githubUrl = "https://raw.githubusercontent.com/mustafa13760806/v2ray/main/file1.txt"; // Replace with your GitHub file URL
+          var data = new FormData();
+          data.append("filename", "file1.txt");
+          data.append("content", text);
+
+          fetch(githubUrl, {
+            method: "PUT",
+            body: data
+          })
+          .then(response => {
+            if (response.ok) {
+              console.log("Text saved on GitHub successfully!");
+            } else {
+              console.error("Failed to save text on GitHub!");
+            }
+          })
+          .catch(error => {
+            console.error("Error:", error);
+          });
+        })
+        .catch(error => {
+          console.error("Error:", error);
+        });
+    }
+  </script>
 </head>
 <body>
-    <script>
-        // Function to retrieve text content from the URL
-        async function getTextFromURL(url) {
-            const response = await fetch(url);
-
-            if (!response.ok) {
-                throw new Error('Failed to fetch the content');
-            }
-
-            const text = await response.text();
-            return text;
-        }
-
-        // Function to save text content to file1.txt in a GitHub repository
-        async function saveTextToFile(content) {
-            const owner = 'mustafa13760806';
-            const repo = 'v2ray';
-            const branch = 'main';
-            const path = 'file1.txt';
-            const token = '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';
-
-            const requestOptions = {
-                method: 'PUT',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${token}`
-                },
-                body: JSON.stringify({
-                    message: 'Updated file1.txt',
-                    content: btoa(content), // Encode the content in base64
-                    sha: ''
-                })
-            };
-
-            // Get the existing SHA of the file
-            const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}?ref=${branch}`, {
-                headers: {
-                    'Authorization': `Bearer ${token}`
-                }
-            });
-
-            if (response.ok) {
-                const fileData = await response.json();
-                requestOptions.body.sha = fileData.sha; // Set the SHA of the existing file
-            }
-
-            // Create or update the file using the GitHub API
-            const saveResponse = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, requestOptions);
-            if (!saveResponse.ok) {
-                throw new Error('Failed to save the file');
-            }
-        }
-
-        // Usage example
-        const url1 = 'https://raw.githubusercontent.com/mustafa13760806/v2ray/main/Matin';
-
-        getTextFromURL(url1)
-            .then(content => saveTextToFile(content))
-            .then(() => console.log('File saved successfully'))
-            .catch(error => console.error('An error occurred:', error));
-    </script>
+  <button onclick="getTextAndSaveToFile()">Get Text and Save to File1.txt</button>
 </body>
 </html>

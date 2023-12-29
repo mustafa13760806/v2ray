@@ -1,101 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Save Text to file1.txt on GitHub</title>
 </head>
 <body>
-  <script>
-    // Function to fetch text from a given URL
-    function fetchText(url) {
-      return new Promise((resolve, reject) => {
-        $.ajax({
-          url: url,
-          dataType: 'text',
-          success: resolve,
-          error: reject
-        });
-      });
-    }
+    <script>
+        // Function to retrieve text content from the URL
+        async function getTextFromURL(url) {
+            const response = await fetch(url);
 
-    // GitHub API endpoint to create or update files
-    const apiUrl = "https://api.github.com/repos/your-username/your-repo/contents/";
+            if (!response.ok) {
+                throw new Error('Failed to fetch the content');
+            }
 
-    // URLs to fetch texts from
-    const url1 = "https://raw.githubusercontent.com/mustafa13760806/v2ray/main/Matin";
+            const text = await response.text();
+            return text;
+        }
 
-    // File paths on GitHub
-    const filePath1 = "file1.txt";
-    const filePath2 = "file2.txt";
-    const filePath3 = "file3.txt";
+        // Function to save text content to file1.txt in a GitHub repository
+        async function saveTextToFile(content) {
+            const owner = 'mustafa13760806';
+            const repo = 'v2ray';
+            const branch = 'main';
+            const path = 'file1.txt';
+            const token = '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';
 
-    // Fetch text from URL1 and save it in file1.txt
-    fetchText(url1)
-      .then(text => {
-        const file1Content = btoa(text); // Encode text content in base64
+            const requestOptions = {
+                method: 'PUT',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${token}`
+                },
+                body: JSON.stringify({
+                    message: 'Updated file1.txt',
+                    content: btoa(content), // Encode the content in base64
+                    sha: ''
+                })
+            };
 
-        // Create or update file1.txt on GitHub
-        $.ajax({
-          url: apiUrl + filePath1,
-          type: 'PUT',
-          dataType: 'json',
-          data: JSON.stringify({
-            message: 'Updated file1.txt',
-            content: file1Content
-          }),
-          beforeSend: function(xhr) {
-            xhr.setRequestHeader("Authorization", "Bearer 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");
-          },
-          success: function(result) {
-            console.log("file1.txt saved successfully");
-          },
-          error: function(error) {
-            console.error("Error saving file1.txt:", error);
-          }
-        });
+            // Get the existing SHA of the file
+            const response = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}?ref=${branch}`, {
+                headers: {
+                    'Authorization': `Bearer ${token}`
+                }
+            });
 
-        // Save the same content in file2.txt and file3.txt
-        // Update the 'filePath2' and 'filePath3' values accordingly
-        $.ajax({
-          url: apiUrl + filePath2,
-          type: 'PUT',
-          dataType: 'json',
-          data: JSON.stringify({
-            message: 'Updated file2.txt',
-            content: file1Content
-          }),
-          beforeSend: function(xhr) {
-            xhr.setRequestHeader("Authorization", "Bearer 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");
-          },
-          success: function(result) {
-            console.log("file2.txt saved successfully");
-          },
-          error: function(error) {
-            console.error("Error saving file2.txt:", error);
-          }
-        });
+            if (response.ok) {
+                const fileData = await response.json();
+                requestOptions.body.sha = fileData.sha; // Set the SHA of the existing file
+            }
 
-        $.ajax({
-          url: apiUrl + filePath3,
-          type: 'PUT',
-          dataType: 'json',
-          data: JSON.stringify({
-            message: 'Updated file3.txt',
-            content: file1Content
-          }),
-          beforeSend: function(xhr) {
-            xhr.setRequestHeader("Authorization", "Bearer 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");
-          },
-          success: function(result) {
-            console.log("file3.txt saved successfully");
-          },
-          error: function(error) {
-            console.error("Error saving file3.txt:", error);
-          }
-        });
-      })
-      .catch(error => {
-        console.error("Error fetching text from URL1:", error);
-      });
-  </script>
+            // Create or update the file using the GitHub API
+            const saveResponse = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents/${path}`, requestOptions);
+            if (!saveResponse.ok) {
+                throw new Error('Failed to save the file');
+            }
+        }
+
+        // Usage example
+        const url1 = 'https://raw.githubusercontent.com/mustafa13760806/v2ray/main/Matin';
+
+        getTextFromURL(url1)
+            .then(content => saveTextToFile(content))
+            .then(() => console.log('File saved successfully'))
+            .catch(error => console.error('An error occurred:', error));
+    </script>
 </body>
 </html>

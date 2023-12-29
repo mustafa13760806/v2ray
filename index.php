@@ -1,7 +1,7 @@
 <?php
 
 $url1 = 'https://raw.githubusercontent.com/mustafa13760806/v2ray/main/Matin'; // Replace with the URL you want to retrieve text from
-$file1 = 'https://raw.githubusercontent.com/mustafa13760806/v2ray/main/File1.txt'; // Replace with your GitHub file URL
+$file1 = 'https://tellso.ir/v2ray/File1.txt'; // Replace with your GitHub file URL
 
 // Get the text from URL1
 $text = file_get_contents($url1);

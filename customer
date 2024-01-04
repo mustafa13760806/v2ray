@@ -6,6 +6,7 @@ $text = file_get_contents($url1); // Retrieve text from URL1
 // Save the text into three different files
 //Infinity
 file_put_contents("matin", $text);
+file_put_contents("mustafa", $text);
 
 //NoTimeDetacted
 file_put_contents("SazanJafari-Server5", $text);

@@ -9,7 +9,7 @@ file_put_contents("matin", $text);
 //2
 file_put_contents("mustafa", $text);
 //3
-
+file_put_contents("9197977434", $text);
 //4
 file_put_contents("9911599745", $text);
 //5

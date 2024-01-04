@@ -36,4 +36,4 @@ $text = file_get_contents($url1); // Retrieve text from URL1
 //29-Om
 //30-Om
 
-echo '<form style="background-color: #f94e60; text-align: center; padding-top:50px; padding-bottom:50px;padding-righ:50px;padding-left:50px; margin: 50 50 50 50px;"><h1 style="color:white;">Expired List has been Updated. </h1></form>';?>
+echo '<form style="background-color: #f94e60; border-radius:25px; text-align: center; padding-top:50px; padding-bottom:50px;padding-righ:50px;padding-left:50px; margin: 50 50 50 50px;"><h1 style="color:white;">Expired List has been Updated. </h1></form>';?>

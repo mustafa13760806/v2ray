@@ -59,6 +59,9 @@ file_put_contents("9384388524", $text);
 //12-Dey
 file_put_contents("9921383548", $text);
 //13-Dey
+file_put_contents("9309668687", $text);
+file_put_contents("9383067715", $text);
+
 //14-Dey
 file_put_contents("9013081790", $text);
 file_put_contents("9154495925", $text);

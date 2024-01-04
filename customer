@@ -27,6 +27,8 @@ file_put_contents("AghaSafari-Server5", $text);
 
 //1-Dey
 file_put_contents("9032007751", $text);
+file_put_contents("9308360886", $text);
+
 //2-Dey
 //3-Dey
 //4-Dey

@@ -4,38 +4,52 @@ $url1 = "https://raw.githubusercontent.com/mustafa13760806/v2ray/main/main"; // 
 $text = file_get_contents($url1); // Retrieve text from URL1
 
 // Save the text into three different files
-//1
-file_put_contents("matin", $text);
-//2
+//Infinity
 file_put_contents("mustafa", $text);
-//3
+file_put_contents("matin", $text);
+
+//1-Dey
+//2-Dey
+//3-Dey
+//4-Dey
 file_put_contents("9197977434", $text);
-//4
 file_put_contents("9911599745", $text);
-//5
-file_put_contents("9380735790", $text);
-//6
-file_put_contents("9159245547", $text);
-//7
-file_put_contents("9159042007", $text);
-//8
-file_put_contents("9158595386", $text);
-//9
-file_put_contents("9158174898", $text);
-//10
-file_put_contents("9154796268", $text);
-//11
-file_put_contents("9145689072", $text);
-//12
-file_put_contents("9030233504", $text);
-//13
-file_put_contents("9374899681", $text);
-//13
 file_put_contents("9930854892", $text);
-//14
+file_put_contents("9380735790", $text);
+file_put_contents("9159245547", $text);
+file_put_contents("9159042007", $text);
+file_put_contents("9158595386", $text);
+file_put_contents("9158174898", $text);
+file_put_contents("9154796268", $text);
+file_put_contents("9145689072", $text);
+file_put_contents("9030233504", $text);
+file_put_contents("9374899681", $text);
+//5-Dey
+//6-Dey
+//7-Dey
+//8-Dey
+//9-Dey
+//10-Dey
+//11-Dey
+//12-Dey
+//13-Dey
+//14-Dey
 file_put_contents("9013081790", $text);
-//15
 file_put_contents("9154495925", $text);
-
-
+//15-Dey
+//16-Dey
+//17-Dey
+//18-Dey
+//19-Dey
+//20-Dey
+//21-Dey
+//22-Dey
+//23-Dey
+//24-Dey
+//25-Dey
+//26-Dey
+//27-Dey
+//28-Dey
+//29-Dey
+//30-Dey
 echo '<form style="background-color: #f94e60; text-align: center; padding-top:50px; padding-bottom:50px;padding-righ:50px;padding-left:50px; margin: 50 50 50 50px;"><h1 style="color:white;">Main List has been Updated. </h1></form>';?>

@@ -8,6 +8,23 @@ $text = file_get_contents($url1); // Retrieve text from URL1
 file_put_contents("mustafa", $text);
 file_put_contents("matin", $text);
 
+//NoTimeDetacted
+file_put_contents("SazanJafari-Server5", $text);
+file_put_contents("Taghavi-Server5", $text);
+file_put_contents("KhaleAzam-Server5", $text);
+file_put_contents("MahdiKhorandad-Server5", $text);
+file_put_contents("KhanomMohammadi-Server5", $text);
+file_put_contents("MostafaSobhani-Server5", $text);
+file_put_contents("MaryamKhajavi-Server5", $text);
+file_put_contents("RezaNikSirat-Server5", $text);
+file_put_contents("AzamSafari-Server5", $text);
+file_put_contents("MohammadMaghol-Server5", $text);
+file_put_contents("Norozi-Server5", $text);
+file_put_contents("Kosari-Server5", $text);
+file_put_contents("AghaSafari-Server5", $text);
+
+
+
 //1-Dey
 file_put_contents("9032007751", $text);
 //2-Dey
@@ -25,6 +42,7 @@ file_put_contents("9154796268", $text);
 file_put_contents("9145689072", $text);
 file_put_contents("9030233504", $text);
 file_put_contents("9374899681", $text);
+file_put_contents("9384388524", $text);
 //5-Dey
 //6-Dey
 //7-Dey

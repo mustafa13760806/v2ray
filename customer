@@ -7,7 +7,7 @@ $text = file_get_contents($url1); // Retrieve text from URL1
 //Infinity
 file_put_contents("matin", $text);
 file_put_contents("mustafa", $text);
-file_put_contents("test", $text);
+
 //NoTimeDetacted
 file_put_contents("SazanJafari-Server5", $text);
 file_put_contents("Taghavi-Server5", $text);

@@ -5,6 +5,8 @@ $text = file_get_contents($url1); // Retrieve text from URL1
 
 // Save the text into three different files
 //1-Om
+file_put_contents("mustafa", $text);
+
 //2-Om
 //3-Om
 //4-Om

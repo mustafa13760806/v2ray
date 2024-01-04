@@ -1,0 +1,38 @@
+<?php
+$url1 = "https://raw.githubusercontent.com/mustafa13760806/v2ray/main/expired"; // URL to fetch text from
+
+$text = file_get_contents($url1); // Retrieve text from URL1
+
+// Save the text into three different files
+//1-Om
+//2-Om
+//3-Om
+//4-Om
+//5-Om
+//6-Om
+//7-Om
+//8-Om
+//9-Om
+//10-Om
+//11-Om
+//12-Om
+//13-Om
+//14-Om
+//15-Om
+//16-Om
+//17-Om
+//18-Om
+//19-Om
+//20-Om
+//21-Om
+//22-Om
+//23-Om
+//24-Om
+//25-Om
+//26-Om
+//27-Om
+//28-Om
+//29-Om
+//30-Om
+
+echo '<form style="background-color: #f94e60; text-align: center; padding-top:50px; padding-bottom:50px;padding-righ:50px;padding-left:50px; margin: 50 50 50 50px;"><h1 style="color:white;">Expired List has been Updated. </h1></form>';?>

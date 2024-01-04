@@ -34,6 +34,9 @@ file_put_contents("9038324584", $text);
 
 //2-Dey
 //3-Dey
+file_put_contents("9051155319", $text);
+file_put_contents("9380461564", $text);
+file_put_contents("9369723346", $text);
 //4-Dey
 file_put_contents("9035049061", $text);
 file_put_contents("9027278506", $text);

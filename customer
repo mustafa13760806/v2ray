@@ -69,6 +69,7 @@ file_put_contents("user31-server5", $text);
 file_put_contents("EhsanJazayeri-server5", $text);
 file_put_contents("9369879761", $text);
 file_put_contents("9337469754", $text);
+file_put_contents("KhanomArjmandi", $text);
 //1️⃣8️⃣-Dey
 //1️⃣9️⃣-Dey
 //2️⃣0️⃣-Dey

@@ -4,7 +4,7 @@ $url1 = "https://raw.githubusercontent.com/mustafa13760806/v2ray/main/main"; // 
 $text = file_get_contents($url1); // Retrieve text from URL1
 
 // Save the text into three different files
-//Infinity
+//♾️Infinity
 file_put_contents("matin", $text);
 file_put_contents("mustafa", $text);
 
@@ -22,24 +22,18 @@ file_put_contents("MohammadMaghol-Server5", $text);
 file_put_contents("Norozi-Server5", $text);
 file_put_contents("Kosari-Server5", $text);
 file_put_contents("AghaSafari-Server5", $text);
-
-
-
 //1️⃣-Dey
 file_put_contents("9032007751", $text);
 file_put_contents("9308360886", $text);
 file_put_contents("9037753426", $text);
 file_put_contents("9038324584", $text);
 file_put_contents("9032007751", $text);
-
-
-
 //2️⃣-Dey
-//3-Dey
+//3️⃣-Dey
 file_put_contents("9051155319", $text);
 file_put_contents("9380461564", $text);
 file_put_contents("9369723346", $text);
-//4-Dey
+//4️⃣-Dey
 file_put_contents("9035049061", $text);
 file_put_contents("9027278506", $text);
 file_put_contents("9197977434", $text);
@@ -55,49 +49,44 @@ file_put_contents("9145689072", $text);
 file_put_contents("9030233504", $text);
 file_put_contents("9374899681", $text);
 file_put_contents("9384388524", $text);
-//5-Dey
-//6-Dey
-//7-Dey
-//8-Dey
-//9-Dey
-//10-Dey
-//11-Dey
-//12-Dey
+//5️⃣-Dey
+//6️⃣-Dey
+//7️⃣-Dey
+//8️⃣-Dey
+//9️⃣-Dey
+//🔟-Dey
+//1️⃣1️⃣-Dey
+//1️⃣2️⃣-Dey
 file_put_contents("9921383548", $text);
-//13-Dey
+//1️⃣3️⃣-Dey
 file_put_contents("9309668687", $text);
 file_put_contents("9383067715", $text);
-
-//14-Dey
+//1️⃣4️⃣-Dey
 file_put_contents("9013081790", $text);
 file_put_contents("9154495925", $text);
-//15-Dey
+//1️⃣5️⃣-Dey
 file_put_contents("user31-server5", $text);
-//16-Dey
+//1️⃣6️⃣-Dey
 file_put_contents("EhsanJazayeri-server5", $text);
 file_put_contents("9369879761", $text);
 file_put_contents("9337469754", $text);
-
-
-//17-Dey
-//18-Dey
-//19-Dey
-//20-Dey
-//21-Dey
-//22-Dey
-//23-Dey
-//24-Dey
-//25-Dey
-//26-Dey
-//27-Dey
-//28-Dey
-//29-Dey
-//30-Dey
+//1️⃣8️⃣-Dey
+//1️⃣9️⃣-Dey
+//2️⃣0️⃣-Dey
+//2️⃣1️⃣-Dey
+//2️⃣2️⃣-Dey
+//2️⃣3️⃣-Dey
+//2️⃣4️⃣-Dey
+//2️⃣5️⃣-Dey
+//2️⃣6️⃣-Dey
+//2️⃣7️⃣-Dey
+//2️⃣8️⃣-Dey
+//2️⃣9️⃣-Dey
+//3️⃣0️⃣-Dey
+//3️⃣1️⃣-Dey
 file_put_contents("9376617011", $text);
 file_put_contents("9013582110", $text);
 file_put_contents("9027590134", $text);
-
-
 file_put_contents("9054474097", $text);
 file_put_contents("9375161819", $text);
 file_put_contents("9058665791", $text);

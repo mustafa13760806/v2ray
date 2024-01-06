@@ -30,6 +30,8 @@ file_put_contents("9032007751", $text);
 file_put_contents("9308360886", $text);
 file_put_contents("9037753426", $text);
 file_put_contents("9038324584", $text);
+file_put_contents("9032007751", $text);
+
 
 
 //2-Dey

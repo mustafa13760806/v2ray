@@ -87,6 +87,8 @@ file_put_contents("EhsanJazayeri-server5", $text);
 //28-Dey
 //29-Dey
 //30-Dey
+file_put_contents("9376617011", $text);
+
 file_put_contents("9054474097", $text);
 file_put_contents("9375161819", $text);
 file_put_contents("9058665791", $text);

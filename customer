@@ -25,7 +25,7 @@ file_put_contents("AghaSafari-Server5", $text);
 
 
 
-//1-Dey
+//1️⃣-Dey
 file_put_contents("9032007751", $text);
 file_put_contents("9308360886", $text);
 file_put_contents("9037753426", $text);
@@ -34,7 +34,7 @@ file_put_contents("9032007751", $text);
 
 
 
-//2-Dey
+//2️⃣-Dey
 //3-Dey
 file_put_contents("9051155319", $text);
 file_put_contents("9380461564", $text);

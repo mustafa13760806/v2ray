@@ -76,6 +76,8 @@ file_put_contents("KhanomArjmandi", $text);
 file_put_contents("9027690814", $text);
 
 //1️⃣8️⃣-Dey
+file_put_contents("MahlaAhmadi", $text);
+
 //1️⃣9️⃣-Dey
 //2️⃣0️⃣-Dey
 //2️⃣1️⃣-Dey

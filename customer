@@ -79,7 +79,7 @@ file_put_contents("9027690814", $text);
 //1️⃣8️⃣-Dey
 file_put_contents("MahlaAhmadi", $text);
 file_put_contents("MrKiomarsi", $text);
-
+file_put_contents("Mahdi", $text);
 
 //1️⃣9️⃣-Dey
 //2️⃣0️⃣-Dey

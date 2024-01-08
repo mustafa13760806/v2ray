@@ -63,6 +63,7 @@ file_put_contents("9921383548", $text);
 file_put_contents("9309668687", $text);
 file_put_contents("9383067715", $text);
 //1️⃣4️⃣-Dey
+file_put_contents("9333649379", $text);
 file_put_contents("9013081790", $text);
 file_put_contents("9154495925", $text);
 //1️⃣5️⃣-Dey

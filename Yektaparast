@@ -1,3 +1,2 @@
-vless://ac92ee14-8657-43b1-ba4a-c51e7a1fc531@185.233.13.200:7070?security=none&encryption=none&host=speedtest.net&headerType=http&type=tcp#%F0%9F%9F%A13
-vless://a54f594c-8c9d-43d9-9368-aea8cc6baeca@85.133.238.57:47863?security=none&encryption=none&host=visa.com&headerType=http&type=tcp#%F0%9F%9F%A12
-vless://ac92ee14-8657-43b1-ba4a-c51e7a1fc531@185.233.13.200:6060?security=none&encryption=none&host=speedtest.net&headerType=http&type=tcp#%F0%9F%9F%A11
+vless://51905fd3-29de-4b4e-b351-83542f1d5390@104.22.33.78:443?path=%2F&security=tls&encryption=none&host=Bia.alLhub.Ltd&type=ws&sni=Bia.alLhub.Ltd#%F0%9F%9F%A12
+vless://ffffffff-bf32-4282-b875-eca220008daf@www.zula.ir:443?path=%2F&security=tls&encryption=none&host=f.auto.r.exit.e.e.watashi-java.ir&fp=chrome&type=ws&sni=f.auto.r.exit.e.e.watashi-java.ir#%F0%9F%9F%A11
